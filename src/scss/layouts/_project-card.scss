@@ -1,0 +1,35 @@
+.project-card {
+  display: flex;
+  background-color: var(--color-card-background);
+  border-radius: 24px;
+  align-items: center;
+  padding-left: 55px;
+  gap: 62px;
+
+  &__description {
+    width: 40%;
+    gap: 8px;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__img {
+    height: 320px;
+    width: 50%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-size: 18px;
+  }
+}

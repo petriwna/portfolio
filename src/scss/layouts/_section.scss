@@ -1,0 +1,10 @@
+.section {
+  width: 100%;
+  padding: 74px 90px;
+
+  &__title {
+    font-family: var(--second-family);
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}

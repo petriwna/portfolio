@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nataliia Sychevska",
+  "license": "MIT",
+  "scripts": {
+    "cmd": "gulp",
+    "build": "yarn cmd default",
+    "watch": "yarn cmd watch",
+    "clear": "yarn cmd clean",
+    "deploy": "gulp deploy"
+  },
+  "dependencies": {
+    "del": "6.1.1",
+    "sass": "1.69.5",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.23.9",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-html": "7.1.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "9.0.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-concat": "2.6.1",
+    "gulp-connect": "5.7.0",
+    "gulp-dart-sass": "1.1.0",
+    "gulp-favicons": "^4.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-imagemin": "9.0.0",
+    "gulp-inject": "5.0.5",
+    "gulp-rename": "2.0.0",
+    "gulp-replace": "1.1.4",
+    "gulp-rimraf": "1.0.0",
+    "gulp-sass": "5.1.0",
+    "prettier": "3.1.0"
+  }
+}

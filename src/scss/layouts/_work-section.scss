@@ -1,0 +1,12 @@
+.work-section {
+  background-color: var(--color-background-secondary);
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
