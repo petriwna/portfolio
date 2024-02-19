@@ -18,15 +18,15 @@
     <header class="header">
         <nav>
             <ul class="header__menu">
-                <li><a class="link" href="#">Home</a></li>
-                <li><a class="link" href="#">Work</a></li>
-                <li><a class="link" href="#">Testimonials</a></li>
-                <li><a class="link" href="#">About</a></li>
+                <li><a class="link" href="#hero">Home</a></li>
+                <li><a class="link" href="#work">Work</a></li>
+                <li><a class="link" href="#testimonials">Testimonials</a></li>
+                <li><a class="link" href="#about">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero-section">
+        <section id="hero" class="hero-section">
             <div class="hero-section__preview">
                 <div class="hero-section__texts">
                     <span class="hero-section__hello">👋 Hello All</span>
@@ -50,7 +50,7 @@
                 <!--                <img src="public/images/img-hero.png" alt="hello">-->
             </div>
         </section>
-        <section class="work-section section">
+        <section id="work" class="work-section section">
             <h2 class="work-section__title section__title">My Work</h2>
             <ul class="work-section__list">
                 <li class="work-section__item">
@@ -95,7 +95,7 @@
                 </li>
             </ul>
         </section>
-        <section class="testimonials-section section">
+        <section id="testimonials" class="testimonials-section section">
             <div>
                 <h2 class="testimonials-section__title section__title section__title--centered">Some Generous Words</h2>
                 <h3 class="testimonials-section__description">Some of my favorite testimonials from my clients</h3>
@@ -156,7 +156,7 @@
                 </button>
             </div>
         </section>
-        <section class="about-section section">
+        <section id="about" class="about-section section">
             <div class="about-section__container">
                 <div class="about-section__description">
                     <h2 class="about-section__title section__title">A Little Bit About Me</h2>
@@ -179,7 +179,32 @@
         </section>
     </main>
     <footer class="footer">
-
+        <div class="footer__container">
+            <h2 class="footer__title">Let’s work together and <br>make everything super cute <br>and super useful.</h2>
+            <button type="button" class="footer__button button ">Contact Me</button>
+        </div>
+        <div class="footer__socials">
+            <a href="#" title="Upwork">
+                <svg class="footer__socials-icon" width="22" height="22">
+                    <use href="../public/images/icons.svg#icon-upwork"></use>
+                </svg>
+            </a>
+            <a href="#" title="Github">
+                <svg class="footer__socials-icon github" width="22" height="22">
+                    <use href="../public/images/icons.svg#icon-github"></use>
+                </svg>
+            </a>
+            <a href="#" title="Telegram">
+                <svg class="footer__socials-icon telegram" width="22" height="22">
+                    <use href="../public/images/icons.svg#icon-telegram"></use>
+                </svg>
+            </a>
+            <a href="#" title="Linkedin">
+                <svg class="footer__socials-icon linkedin" width="22" height="22">
+                    <use href="../public/images/icons.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+        </div>
     </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
