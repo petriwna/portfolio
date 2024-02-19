@@ -14,7 +14,8 @@
   "dependencies": {
     "del": "6.1.1",
     "sass": "1.69.5",
-    "sharp": "^0.33.2"
+    "sharp": "^0.33.2",
+    "swiper": "11.0.6"
   },
   "devDependencies": {
     "@babel/preset-env": "7.23.9",

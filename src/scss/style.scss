@@ -2,14 +2,18 @@
 @import "utils/fonts";
 @import "utils/variables";
 
-@import "components/link";
 @import "components/buttons";
+@import "components/carousel-button";
+@import "components/link";
+@import "components/project-card";
+@import "components/testimonial-card";
 
+@import "layouts/about-section";
 @import "layouts/container";
 @import "layouts/header";
 @import "layouts/hero-section";
-@import "layouts/project-card";
 @import "layouts/section";
+@import "layouts/testimonials-section";
 @import "layouts/work-section";
 
 @import "base";
