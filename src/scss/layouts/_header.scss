@@ -1,5 +1,12 @@
 .header {
-  padding: 28px 96px;
+  padding: 20px 55px;
+  font-size: 20px;
+
+
+  @media screen and (min-width: $bp-desktop){
+    padding: 28px 96px;
+    font-size: 14px;
+  }
 
   &__menu {
     display: flex;

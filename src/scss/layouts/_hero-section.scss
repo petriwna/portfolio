@@ -1,14 +1,26 @@
 .hero-section {
   display: flex;
   position: relative;
-  padding: 35px 90px 56px 96px;
+  padding: 0 50px;
+
+  @media screen and (min-width: $bp-desktop){
+    padding: 35px 90px 56px 96px;
+  }
 
   &__preview {
     display: flex;
-    padding-top: 28px;
-    padding-bottom: 58px;
+    padding-bottom: 38px;
     flex-direction: column;
     gap: 30px;
+    width: 50%;
+
+    @media screen and (min-width: $bp-desktop){
+      padding-bottom: 58px;
+    }
+
+    @media screen and (min-width: $bp-tablet){
+      padding-top: 18px;
+    }
   }
 
   &__texts {
@@ -28,15 +40,28 @@
 
   &__position {
     font-family: var(--second-family);
-    font-size: 54px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet){
+      font-size: 46px;
+    }
+
+    @media screen and (min-width: $bp-desktop){
+      font-size: 56px;
+    }
   }
 
   &__buttons {
     display: flex;
     gap: 10px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop){
+      flex-direction: row;
+    }
   }
 
   &__button {
@@ -54,13 +79,17 @@
 
   &__image {
     position: absolute;
-    right: 56px;
-    top: 35px;
+    right: 0;
     bottom: 0;
-    width: 428px;
-    height: 502px;
+    width: 320px;
+    height: 379px;
     background-image: url("../../public/images/img-hero1.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (min-width: $bp-tablet){
+      width: 428px;
+      height: 498px;
+    }
   }
 }

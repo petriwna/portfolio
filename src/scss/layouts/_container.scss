@@ -1,6 +1,9 @@
 .container {
   width: 100%;
-  max-width: 1092.8px;
   margin: 0 auto;
   background-color: var(--color-background-primary);
+
+  @media screen and (min-width: $bp-large-desktop) {
+    max-width: 1092.8px;
+  }
 }
