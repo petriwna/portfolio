@@ -1,5 +1,4 @@
 .about-section {
-  background-color: var(--color-background-secondary);
   position: relative;
 
   &__container {
@@ -27,10 +26,10 @@
   &__img {
     position: absolute;
     right: 0px;
-    top: 12px;
+    top: 0px;
     bottom: 0;
-    width: 524px;
-    height: 544px;
+    width: 514px;
+    height: 494px;
     background-image: url("../../public/images/img-about.png");
     background-repeat: no-repeat;
     background-size: contain;

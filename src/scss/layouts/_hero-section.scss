@@ -42,10 +42,14 @@
   &__button {
     background-color: var(--color-blue);
     border: none;
-    color: var(--white);
     display: flex;
     align-items: center;
     gap: 8px;
+
+    &--link {
+      color: var(--white);
+      text-decoration: none;
+    }
   }
 
   &__image {
