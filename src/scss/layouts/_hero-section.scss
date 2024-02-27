@@ -1,9 +1,13 @@
 .hero-section {
   display: flex;
   position: relative;
-  padding: 0 50px;
+  padding: 0 25px;
 
-  @media screen and (min-width: $bp-desktop){
+  @media screen and (min-width: $bp-mobile) {
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
     padding: 35px 90px 56px 96px;
   }
 
@@ -11,14 +15,18 @@
     display: flex;
     padding-bottom: 38px;
     flex-direction: column;
+    width: 80%;
     gap: 30px;
-    width: 50%;
 
-    @media screen and (min-width: $bp-desktop){
+    @media screen and (min-width: $bp-mobile) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       padding-bottom: 58px;
     }
 
-    @media screen and (min-width: $bp-tablet){
+    @media screen and (min-width: $bp-tablet) {
       padding-top: 18px;
     }
   }
@@ -45,11 +53,11 @@
     line-height: 1.2;
     margin-bottom: 0;
 
-    @media screen and (min-width: $bp-tablet){
+    @media screen and (min-width: $bp-tablet) {
       font-size: 46px;
     }
 
-    @media screen and (min-width: $bp-desktop){
+    @media screen and (min-width: $bp-desktop) {
       font-size: 56px;
     }
   }
@@ -59,7 +67,7 @@
     gap: 10px;
     flex-direction: column;
 
-    @media screen and (min-width: $bp-desktop){
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
     }
   }
@@ -79,17 +87,33 @@
 
   &__image {
     position: absolute;
-    right: 0;
     bottom: 0;
-    width: 320px;
-    height: 379px;
-    background-image: url("../../public/images/img-hero1.png");
+    right: 10px;
+    width: 198px;
+    height: 238px;
+    background-image: url("../public/images/img-hero1.png");
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media screen and (min-width: $bp-tablet){
+    @media screen and (min-width: $bp-mobile) {
+      display: block;
+      top: 58px;
+      right: 10px;
+      bottom: 0;
+      width: 300px;
+      height: 398px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
       width: 428px;
-      height: 498px;
+      height: 456px;
+      top: 0;
+      right: 24px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 450px;
+      height: 534px;
     }
   }
 }
