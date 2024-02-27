@@ -4,6 +4,7 @@
   border-radius: 24px;
   align-items: center;
   flex-direction: column-reverse;
+  overflow: hidden;
 
   @media screen and (min-width: $bp-tablet) {
     padding-left: 40px;
