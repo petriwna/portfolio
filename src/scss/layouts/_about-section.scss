@@ -2,11 +2,20 @@
   position: relative;
 
   &__container {
-    padding: 10px 22px;
-    width: 48%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 18px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 75%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 10px 22px;
+      gap: 22px;
+    }
   }
 
   &__description {
@@ -21,17 +30,49 @@
   &__text {
     font-weight: 500;
     line-height: 1.6;
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 60%;
+    }
+  }
+
+  &__button {
+    align-self: flex-start;
+    width: 40%;
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 244px;
+    }
   }
 
   &__img {
     position: absolute;
-    right: 0px;
-    top: 0px;
     bottom: 0;
-    width: 514px;
-    height: 494px;
+    right: 10px;
+    width: 151px;
+    height: 157px;
     background-image: url("../public/images/img-about.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 300px;
+      height: 364px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 372px;
+      height: 456px;
+      right: 24px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 460px;
+      height: 494px;
+    }
   }
 }
