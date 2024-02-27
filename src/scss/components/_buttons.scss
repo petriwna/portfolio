@@ -1,11 +1,21 @@
 .button {
   border: 4px solid var(--color-blue-border-text);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 12px;
   color: var(--color-blue-border-text);
   border-radius: 16px;
   padding: 18px 26px;
   background-color: transparent;
   text-wrap: nowrap;
-  width: 244px;
+  justify-content: center;
+  width: 55%;
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 244px;
+  }
 }
